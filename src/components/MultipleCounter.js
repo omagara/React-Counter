@@ -11,6 +11,7 @@ function MultipleCounter() {
 
     return (
         <div>
+            <h1>COUNTER</h1>
             <CounterSizeGenerator updateCounterSize={updateCounterSize}></CounterSizeGenerator>
             <CounterGroup counterSize={counterSize}></CounterGroup>
         </div>
