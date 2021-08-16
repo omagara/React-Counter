@@ -1,21 +1,20 @@
 import Counter from "./Counter";
 
-function CounterGroup(props){
+function CounterGroup(props) {
 
-    function generateCounterList(){
+    function generateCounterList() {
         return new Array(props.counterSize).fill(Date.now())
     }
     const counterList = generateCounterList();
     return (
-    <div>
-        {counterList.map((item, index)=> (
-            <Counter key = {item + index}></Counter>
-        ))}
+        <div>
+            {counterList.map((item, index) => (
+                <Counter key={item + index}></Counter>
+            ))}
 
-    </div>
-);
+        </div>
+    );
 
 }
-
 
 export default CounterGroup;
