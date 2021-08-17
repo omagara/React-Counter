@@ -4,9 +4,10 @@ function CounterSizeGenerator(props) {
     const [size, setSize] = useState(0);
 
     function handleChangeSize(event){
-        setSize(parseInt(event.target.value));
+        const counterSize = parseInt(event.target.value);
+        setSize(counterSize);
 
-        props.updateCounterSize(parseInt(event.target.value))
+        props.updateCounterSize(counterSize);
     }
 
     return (
